@@ -1,0 +1,1678 @@
+04/02/15 18:54 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:54 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:54 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:54 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:54 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:54 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:54 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:54 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:54 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:54 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:54 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:54 [Thread-3]  INFO FrmBatuta.java:401 - Processando Produtos
+04/02/15 18:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:54 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.IllegalThreadStateException
+	at java.lang.Thread.start(Thread.java:705)
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:118)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/1971764991.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6525)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6290)
+	at java.awt.Container.processEvent(Container.java:2234)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4898)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4533)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4462)
+	at java.awt.Container.dispatchEventImpl(Container.java:2278)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 18:55 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:55 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:55 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:55 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:55 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:55 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:55 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:55 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:55 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:55 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:55 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:55 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:55 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:55 [Thread-3]  INFO FrmBatuta.java:403 - Processando Produtos
+04/02/15 18:56 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:56 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:56 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:56 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:56 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:56 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:56 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:56 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:56 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:56 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:56 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:56 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:56 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:56 [Thread-3]  INFO FrmBatuta.java:405 - Processando Produtos
+04/02/15 18:58 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:58 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:58 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:58 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:58 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:58 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:58 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:58 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:58 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:58 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:58 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:58 [Thread-3]  INFO FrmBatuta.java:403 - Processando Produtos
+04/02/15 18:59 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:59 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:59 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:59 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:59 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:59 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:59 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:59 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:59 [Thread-3]  INFO FrmBatuta.java:405 - Processando Produtos
+04/02/15 18:59 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 18:59 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 18:59 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 18:59 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 18:59 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 18:59 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 18:59 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 18:59 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 18:59 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 18:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 18:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 18:59 [Thread-3]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 19:02 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:02 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:02 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:02 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:02 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:02 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:02 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:02 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:02 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 19:02 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:02 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 19:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 19:02 [Thread-3]  INFO FrmBatuta.java:411 - Processando Produtos
+04/02/15 19:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 19:02 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.IllegalThreadStateException
+	at java.lang.Thread.start(Thread.java:705)
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:118)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/996796369.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6525)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6290)
+	at java.awt.Container.processEvent(Container.java:2234)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4898)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4533)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4462)
+	at java.awt.Container.dispatchEventImpl(Container.java:2278)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:07 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:07 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:07 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:07 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:07 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:07 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:07 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:07 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:07 [main]  INFO FrmBatuta.java:89 - Carregando componentes da Janela Principal
+04/02/15 19:07 [main]  INFO FrmBatuta.java:94 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:07 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 19:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:120 - Threads Inciadas com sucesso
+04/02/15 19:07 [Thread-3]  INFO FrmBatuta.java:412 - Processando Produtos
+04/02/15 19:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Iniciando Threads
+04/02/15 19:07 [AWT-EventQueue-0] ERROR FrmBatuta.java:122 - Erro ao inciar Threads
+java.lang.IllegalThreadStateException
+	at java.lang.Thread.start(Thread.java:705)
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:119)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/996796369.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6525)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6290)
+	at java.awt.Container.processEvent(Container.java:2234)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4898)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4533)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4462)
+	at java.awt.Container.dispatchEventImpl(Container.java:2278)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:10 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:10 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:10 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:10 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:10 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:10 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:10 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:10 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:10 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 19:10 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:10 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:10 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.NullPointerException
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:116)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/996796369.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6525)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6290)
+	at java.awt.Container.processEvent(Container.java:2234)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4898)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4533)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4462)
+	at java.awt.Container.dispatchEventImpl(Container.java:2278)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:11 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:11 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:11 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:11 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:11 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:11 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:11 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:11 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:11 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 19:11 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:11 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:11 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.NullPointerException
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:116)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/1971764991.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6525)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6290)
+	at java.awt.Container.processEvent(Container.java:2234)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4898)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4533)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4462)
+	at java.awt.Container.dispatchEventImpl(Container.java:2278)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:12 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:12 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:12 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:12 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:12 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:12 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:12 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:12 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:12 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 19:12 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:12 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:12 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:12 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.NullPointerException
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:116)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/996796369.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at com.alee.managers.hotkey.ButtonHotkeyRunnable.run(ButtonHotkeyRunnable.java:47)
+	at com.alee.utils.SwingUtils.invokeLater(SwingUtils.java:2516)
+	at com.alee.managers.hotkey.HotkeyManager.processHotkeys(HotkeyManager.java:225)
+	at com.alee.managers.hotkey.HotkeyManager$1.eventDispatched(HotkeyManager.java:116)
+	at java.awt.Toolkit$SelectiveAWTEventListener.eventDispatched(Toolkit.java:2425)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit.notifyAWTEventListeners(Toolkit.java:2275)
+	at java.awt.Component.dispatchEventImpl(Component.java:4777)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1954)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:806)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1074)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:945)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:771)
+	at java.awt.Component.dispatchEventImpl(Component.java:4752)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:13 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:13 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:13 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:13 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:13 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:13 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:13 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:13 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:13 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 19:13 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:13 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:13 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:13 [AWT-EventQueue-0] ERROR FrmBatuta.java:121 - Erro ao inciar Threads
+java.lang.NullPointerException
+	at br.com.orionline.gui.FrmBatuta.lambda$initComponentes2$0(FrmBatuta.java:116)
+	at br.com.orionline.gui.FrmBatuta$$Lambda$8/996796369.actionPerformed(Unknown Source)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2346)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at com.alee.managers.hotkey.ButtonHotkeyRunnable.run(ButtonHotkeyRunnable.java:47)
+	at com.alee.utils.SwingUtils.invokeLater(SwingUtils.java:2516)
+	at com.alee.managers.hotkey.HotkeyManager.processHotkeys(HotkeyManager.java:225)
+	at com.alee.managers.hotkey.HotkeyManager$1.eventDispatched(HotkeyManager.java:116)
+	at java.awt.Toolkit$SelectiveAWTEventListener.eventDispatched(Toolkit.java:2425)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit$ToolkitEventMulticaster.eventDispatched(Toolkit.java:2316)
+	at java.awt.Toolkit.notifyAWTEventListeners(Toolkit.java:2275)
+	at java.awt.Component.dispatchEventImpl(Component.java:4777)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1954)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:806)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1074)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:945)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:771)
+	at java.awt.Component.dispatchEventImpl(Component.java:4752)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+04/02/15 19:14 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 19:14 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 19:14 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 19:14 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 19:14 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 19:14 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 19:14 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 19:14 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 19:14 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 19:14 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 19:14 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 19:14 [Thread-52]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 19:14 [Thread-54]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:14 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 19:14 [Thread-68]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 19:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 19:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 19:21 [Thread-94]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 20:51 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 20:51 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 20:51 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 20:51 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 20:51 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 20:51 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 20:51 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 20:51 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 20:51 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 20:51 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+04/02/15 20:51 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 20:51 [AWT-EventQueue-0]  INFO FrmBatuta.java:115 - Iniciando Threads
+04/02/15 20:51 [AWT-EventQueue-0]  INFO FrmBatuta.java:119 - Threads Inciadas com sucesso
+04/02/15 20:51 [Thread-52]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 20:56 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 20:56 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 20:56 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 20:56 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 20:56 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 20:56 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 20:56 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 20:56 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 20:56 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 20:56 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 20:56 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 20:57 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 20:57 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 20:57 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 20:57 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 20:57 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 20:57 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 20:57 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 20:57 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 20:57 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 20:57 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 20:57 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 20:58 [Thread-88]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 20:58 [Thread-90]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 20:58 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 20:58 [Thread-92]  INFO FrmBatuta.java:414 - Processando Produtos
+04/02/15 20:59 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 20:59 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 20:59 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 20:59 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 20:59 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 20:59 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 20:59 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 20:59 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 20:59 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 20:59 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 20:59 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 20:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 20:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 20:59 [Thread-88]  INFO FrmBatuta.java:406 - Processando Produtos
+04/02/15 20:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 20:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 20:59 [Thread-90]  INFO FrmBatuta.java:406 - Processando Produtos
+04/02/15 21:00 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:00 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:00 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:00 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:00 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:00 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:00 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:00 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:00 [Thread-88]  INFO FrmBatuta.java:406 - Processando Produtos
+04/02/15 21:00 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:00 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:00 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:00 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:00 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:00 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:00 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:00 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:00 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:00 [Thread-88]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 21:03 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:03 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:03 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:03 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:03 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:03 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:03 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:03 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:03 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:03 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:03 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:03 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:03 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:03 [Thread-88]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:03 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:03 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:03 [Thread-90]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:04 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:04 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:04 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:04 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:04 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:04 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:04 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:04 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:04 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:04 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:04 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:04 [Thread-76]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 21:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:04 [Thread-90]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 21:09 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:09 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:09 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:09 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:09 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:09 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:09 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:09 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:09 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:09 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:09 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-76]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-78]  INFO FrmBatuta.java:407 - Processando Produtos
+04/02/15 21:10 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:10 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:10 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:10 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:10 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:10 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:10 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:10 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:10 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:10 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:10 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-52]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-54]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-56]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:10 [Thread-58]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:11 [Thread-60]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:11 [Thread-74]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:11 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:11 [Thread-76]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:11 [Thread-74] ERROR FrmBatuta.java:491 - Erro ao processar Produtos
+org.firebirdsql.jdbc.FBSQLException: The resultSet is not in a row, use next
+	at org.firebirdsql.jdbc.AbstractResultSet.getField(AbstractResultSet.java:702)
+	at org.firebirdsql.jdbc.AbstractResultSet.getString(AbstractResultSet.java:759)
+	at br.com.orionline.gui.FrmBatuta$ProcessarOpcoesSelecionadas.run(FrmBatuta.java:475)
+	at java.lang.Thread.run(Thread.java:745)
+04/02/15 21:12 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:12 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:12 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:12 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:12 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:12 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:12 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:12 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:12 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:12 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:12 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:12 [AWT-EventQueue-0]  INFO FrmBatuta.java:113 - Iniciando Threads
+04/02/15 21:12 [AWT-EventQueue-0]  INFO FrmBatuta.java:117 - Threads Inciadas com sucesso
+04/02/15 21:12 [Thread-52]  INFO FrmBatuta.java:409 - Processando Produtos
+04/02/15 21:17 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:17 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:17 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:17 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:17 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:17 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:17 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:17 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:17 [main]  INFO FrmBatuta.java:85 - Carregando componentes da Janela Principal
+04/02/15 21:17 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:17 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:108 - Iniciando Threads
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+04/02/15 21:17 [Thread-64]  INFO FrmBatuta.java:405 - Processando Produtos
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:108 - Iniciando Threads
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+04/02/15 21:17 [Thread-66]  INFO FrmBatuta.java:405 - Processando Produtos
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:108 - Iniciando Threads
+04/02/15 21:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+04/02/15 21:17 [Thread-68]  INFO FrmBatuta.java:405 - Processando Produtos
+04/02/15 21:18 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:18 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:18 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:18 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:18 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:18 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:18 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:18 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:18 [main]  INFO FrmBatuta.java:83 - Carregando componentes da Janela Principal
+04/02/15 21:18 [main]  INFO FrmBatuta.java:87 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:18 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:18 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:18 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:18 [Thread-51]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-65]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-67]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-69]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-71]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-73]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-75]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-77]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:19 [Thread-79]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:20 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:20 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:20 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:20 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:20 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:20 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:20 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:20 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:20 [main]  INFO FrmBatuta.java:83 - Carregando componentes da Janela Principal
+04/02/15 21:20 [main]  INFO FrmBatuta.java:87 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:20 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:20 [Thread-63]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:20 [Thread-65]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:20 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:20 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:20 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:20 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:20 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:20 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:21 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:21 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:21 [main]  INFO FrmBatuta.java:83 - Carregando componentes da Janela Principal
+04/02/15 21:21 [main]  INFO FrmBatuta.java:87 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:21 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:21 [Thread-51]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 21:21 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 21:21 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 21:21 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 21:21 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 21:21 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 21:21 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 21:21 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 21:21 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 21:21 [main]  INFO FrmBatuta.java:83 - Carregando componentes da Janela Principal
+04/02/15 21:21 [main]  INFO FrmBatuta.java:87 - Componentes da janela Principal carregados com sucesso
+04/02/15 21:21 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 21:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:102 - Iniciando Threads
+04/02/15 21:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Threads Inciadas com sucesso
+04/02/15 21:21 [Thread-51]  INFO FrmBatuta.java:376 - Processando Produtos
+04/02/15 23:53 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 23:53 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 23:53 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 23:53 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 23:53 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 23:53 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 23:53 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 23:53 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 23:53 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+04/02/15 23:53 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+04/02/15 23:53 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 23:53 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+04/02/15 23:53 [AWT-EventQueue-0]  INFO FrmBatuta.java:109 - Threads Inciadas com sucesso
+04/02/15 23:53 [Thread-63]  INFO FrmBatuta.java:379 - Processando Produtos
+04/02/15 23:53 [Thread-63] ERROR FrmBatuta.java:553 - Erro ao criar arquivo SYSPPRO.txt
+java.io.FileNotFoundException: arquivos\SYSPPRO.txt (O sistema não pode encontrar o caminho especificado)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at java.io.FileWriter.<init>(FileWriter.java:78)
+	at br.com.orionline.gui.FrmBatuta$ProcessarOpcoesSelecionadas.run(FrmBatuta.java:381)
+	at java.lang.Thread.run(Thread.java:745)
+04/02/15 23:56 [main]  INFO Migrador.java:159 - Inciando a aplicação
+04/02/15 23:56 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+04/02/15 23:56 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+04/02/15 23:56 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+04/02/15 23:56 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+04/02/15 23:56 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+04/02/15 23:56 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+04/02/15 23:56 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+04/02/15 23:56 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+04/02/15 23:56 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+04/02/15 23:56 [main]  INFO Migrador.java:79 - Janela principal carregada
+04/02/15 23:56 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+04/02/15 23:56 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+04/02/15 23:56 [Thread-51]  INFO FrmBatuta.java:380 - Processando Produtos
+05/02/15 00:03 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:03 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:03 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:03 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:03 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:03 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:03 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:03 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:03 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:03 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:03 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:04 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:04 [Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:06 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:06 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:06 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:06 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:06 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:06 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:06 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:06 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:06 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:06 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:06 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:06 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:06 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:06 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:07 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:07 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:07 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:07 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:07 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:07 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:07 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:07 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:07 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:07 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:07 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:07 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:08 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:08 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:08 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:08 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:08 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:08 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:08 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:08 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:08 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:08 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:08 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:08 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:08 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:08 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:09 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:09 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:09 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:09 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:09 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:09 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:09 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:09 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:09 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:09 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:09 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:09 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:09 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:09 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:16 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:16 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:16 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:16 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:16 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:16 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:16 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:16 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:16 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:16 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:16 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:16 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:16 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:16 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:21 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:21 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:21 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:21 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:21 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:21 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:21 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:21 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:21 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:21 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:21 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:22 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:22 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:22 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:22 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:22 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:22 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:22 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:22 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:22 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:22 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:22 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:22 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:22 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:23 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:23 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:23 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:23 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:23 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:23 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:23 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:23 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:24 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:24 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:24 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:24 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:24 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:24 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:38 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:38 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:38 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:38 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:38 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:38 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:38 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:38 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:38 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:38 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:38 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:39 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:39 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:39 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:41 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:41 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:41 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:41 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:41 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:41 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:41 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:41 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:41 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:41 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:41 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:41 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:41 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:41 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:42 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:42 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:42 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:42 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:42 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:42 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:42 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:42 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:42 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:42 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:42 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:42 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:42 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:42 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:46 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:46 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:46 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:46 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:46 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:46 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:46 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:46 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:46 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:46 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:46 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:46 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:46 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:46 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:49 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:49 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:49 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:49 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:49 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:49 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:49 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:49 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:49 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:49 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:49 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 00:49 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 00:49 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 00:49 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 00:49 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 00:49 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 00:49 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 00:49 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 00:49 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 00:49 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 00:49 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 00:49 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 00:49 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:10 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:10 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:10 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:10 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:10 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:10 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:10 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:10 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:10 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:10 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:10 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:10 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:10 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:22 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:22 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:22 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:22 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:22 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:22 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:22 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:22 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:22 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:22 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:22 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:22 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:22 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:25 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:25 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:25 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:25 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:25 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:25 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:25 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:25 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:25 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:25 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:25 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:25 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:25 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:25 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:25 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:25 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:25 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:25 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:25 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:25 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:26 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:26 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:26 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:26 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:26 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:26 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:26 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:26 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:26 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:26 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:26 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:26 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:26 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:26 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:26 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:26 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:26 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:27 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:27 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:27 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:27 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:27 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:27 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:27 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:27 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:27 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:27 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:27 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:27 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:27 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:27 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:27 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:27 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:27 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:27 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:27 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:29 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:29 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:29 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:29 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:29 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:29 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:29 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:29 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:29 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:29 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:29 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:29 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:29 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:29 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:32 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:32 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:32 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:32 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:32 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:32 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:32 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:32 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:32 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:32 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:32 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:32 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:32 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:32 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:36 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:36 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:36 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:36 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:36 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:36 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:36 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:36 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:36 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:36 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:36 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:36 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:36 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:36 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:37 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:37 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:37 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:37 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:37 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:37 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:37 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:37 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:37 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:37 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:37 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:37 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:37 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:37 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:38 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:38 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:38 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:38 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:38 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:38 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:38 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:38 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:38 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:38 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:38 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:38 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:38 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:38 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:39 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:39 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:39 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:39 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:39 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:39 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:39 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:39 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:39 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:39 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:39 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:39 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:39 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:39 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:40 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:40 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:40 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:40 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:40 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:40 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:40 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:40 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:40 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:40 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:40 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:40 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:40 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:40 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:46 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:46 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:46 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:46 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:46 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:46 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:46 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:46 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:46 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:46 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:46 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:46 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:46 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:46 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:47 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:47 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:47 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:47 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:47 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:47 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:47 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:47 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:47 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:47 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:47 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:47 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:47 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:47 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:48 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:48 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:48 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:48 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:48 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:48 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:48 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:48 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:48 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:48 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:48 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:48 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:48 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:48 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 02:54 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 02:54 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 02:54 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 02:54 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 02:54 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 02:54 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 02:54 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 02:54 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 02:54 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 02:54 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 02:54 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 02:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 02:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 02:54 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+05/02/15 03:01 [main]  INFO Migrador.java:159 - Inciando a aplicação
+05/02/15 03:01 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+05/02/15 03:01 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+05/02/15 03:01 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+05/02/15 03:01 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+05/02/15 03:01 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+05/02/15 03:01 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+05/02/15 03:01 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+05/02/15 03:01 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+05/02/15 03:01 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+05/02/15 03:01 [main]  INFO Migrador.java:79 - Janela principal carregada
+05/02/15 03:01 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+05/02/15 03:01 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+05/02/15 03:01 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 00:32 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 00:32 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 00:32 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 00:32 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 00:32 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 00:32 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 00:32 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 00:32 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 00:32 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 00:32 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 00:32 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 00:32 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 00:32 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 00:32 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 00:33 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 00:33 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 00:33 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 00:33 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 00:33 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 00:33 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 00:33 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 00:33 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 00:33 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 00:33 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 00:33 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 00:33 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 00:33 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 00:33 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 00:33 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 00:33 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 00:33 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 00:33 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 00:33 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 00:33 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 00:33 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 00:33 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 00:33 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 00:36 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 00:36 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 00:36 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 00:36 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 00:36 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 00:36 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 00:36 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 00:36 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 00:36 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 00:36 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 00:36 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 00:36 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 00:36 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 00:36 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 08:45 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 08:45 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 08:45 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 08:45 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 08:45 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 08:45 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 08:45 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 08:45 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 08:45 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 08:45 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 08:45 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 08:45 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 08:45 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 08:45 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 09:02 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 09:02 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 09:02 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 09:02 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 09:02 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 09:02 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 09:02 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 09:02 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 09:02 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 09:02 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 09:02 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 09:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 09:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 09:02 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 09:16 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 09:16 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 09:16 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 09:16 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 09:16 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 09:16 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 09:16 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 09:16 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 09:16 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 09:16 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 09:16 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 09:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 09:17 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 09:17 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 09:21 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 09:21 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 09:21 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 09:21 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 09:21 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 09:21 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 09:21 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 09:21 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 09:21 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 09:21 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 09:21 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 09:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 09:21 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 09:21 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 09:27 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 09:27 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 09:27 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 09:27 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 09:27 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 09:27 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 09:27 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 09:27 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 09:27 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 09:27 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 09:27 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 09:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 09:27 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 09:27 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 09:59 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 09:59 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 09:59 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 09:59 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 09:59 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 09:59 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 09:59 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 09:59 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 09:59 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 09:59 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 09:59 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 09:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:106 - Iniciando Threads
+06/02/15 09:59 [AWT-EventQueue-0]  INFO FrmBatuta.java:111 - Threads Inciadas com sucesso
+06/02/15 09:59 [Thread Processar Opções]  INFO FrmBatuta.java:381 - Processando Produtos
+06/02/15 10:10 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 10:10 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 10:10 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 10:10 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 10:10 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 10:10 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 10:10 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 10:10 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 10:10 [main]  INFO FrmBatuta.java:87 - Carregando componentes da Janela Principal
+06/02/15 10:10 [main]  INFO FrmBatuta.java:91 - Componentes da janela Principal carregados com sucesso
+06/02/15 10:10 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 10:12 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 10:12 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 10:12 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 10:12 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 10:12 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 10:12 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 10:12 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 10:12 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 10:12 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+06/02/15 10:12 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+06/02/15 10:12 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 10:12 [AWT-EventQueue-0]  INFO FrmBatuta.java:107 - Iniciando Threads
+06/02/15 10:12 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+06/02/15 10:12 [Thread Processar Opções]  INFO FrmBatuta.java:382 - Processando Produtos
+06/02/15 10:19 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 10:19 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 10:19 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 10:19 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 10:19 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 10:19 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+06/02/15 10:19 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+06/02/15 10:19 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 10:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:107 - Iniciando Threads
+06/02/15 10:19 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+06/02/15 10:19 [Thread Processar Opções]  INFO FrmBatuta.java:382 - Processando Produtos
+06/02/15 10:19 [main]  INFO Migrador.java:159 - Inciando a aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+06/02/15 10:19 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+06/02/15 10:19 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+06/02/15 10:19 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+06/02/15 10:19 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+06/02/15 10:19 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+06/02/15 10:19 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+06/02/15 10:19 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+06/02/15 10:19 [main]  INFO Migrador.java:79 - Janela principal carregada
+06/02/15 10:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:107 - Iniciando Threads
+06/02/15 10:20 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+06/02/15 10:20 [Thread Processar Opções]  INFO FrmBatuta.java:382 - Processando Produtos
+13/02/15 00:01 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:01 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:01 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:01 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:01 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:01 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:01 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:01 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:01 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:02 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:02 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:02 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:02 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:02 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:02 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:02 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:02 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:02 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:02 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:02 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:02 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:02 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:02 [AWT-EventQueue-0]  INFO FrmBatuta.java:146 - Carregando janela de configuração do banco de dados
+13/02/15 00:03 [AWT-EventQueue-0]  INFO FrmBatuta.java:151 - Janela de configuração do banco de dados carregado com sucesso
+13/02/15 00:48 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:48 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:48 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:48 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:48 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:48 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:48 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:48 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:48 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:48 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:48 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:48 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 00:48 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 00:48 [Thread Processar Opções]  INFO FrmBatuta.java:598 - Processando Estoque...
+13/02/15 00:50 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:50 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:50 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:50 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:50 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:50 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:50 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:50 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:50 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:50 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:50 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:50 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 00:50 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 00:50 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 00:50 [Thread Processar Opções]  INFO FrmBatuta.java:598 - Processando Estoque...
+13/02/15 00:53 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:53 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:53 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:53 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:53 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:53 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:53 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:53 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:53 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:53 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:53 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:53 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 00:53 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 00:53 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 00:53 [Thread Processar Opções]  INFO FrmBatuta.java:584 - Processo dos Produtos terminada!
+13/02/15 00:53 [Thread Processar Opções]  INFO FrmBatuta.java:599 - Processando Estoque...
+13/02/15 00:53 [Thread Processar Opções]  INFO FrmBatuta.java:663 - Processo do Estoque Terminado!
+13/02/15 00:54 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 00:54 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 00:54 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 00:54 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 00:54 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 00:54 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 00:54 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 00:54 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 00:54 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 00:54 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 00:54 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 00:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 00:54 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 00:54 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 00:54 [Thread Processar Opções]  INFO FrmBatuta.java:584 - Processo dos Produtos terminada!
+13/02/15 00:54 [Thread Processar Opções]  INFO FrmBatuta.java:599 - Processando Estoque...
+13/02/15 00:54 [Thread Processar Opções]  INFO FrmBatuta.java:663 - Processo do Estoque Terminado!
+13/02/15 01:00 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 01:00 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 01:00 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 01:00 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 01:00 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 01:00 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 01:00 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 01:00 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 01:00 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 01:00 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 01:00 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 01:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 01:00 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 01:00 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:589 - Processo dos Produtos terminada!
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:604 - Processando Estoque...
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:673 - Processo do Estoque Terminado!
+13/02/15 01:01 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 01:01 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:589 - Processo dos Produtos terminada!
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:604 - Processando Estoque...
+13/02/15 01:01 [Thread Processar Opções]  INFO FrmBatuta.java:673 - Processo do Estoque Terminado!
+13/02/15 01:06 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 01:06 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 01:06 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 01:06 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 01:06 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 01:06 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 01:06 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 01:06 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 01:06 [main]  INFO FrmBatuta.java:86 - Carregando componentes da Janela Principal
+13/02/15 01:06 [main]  INFO FrmBatuta.java:90 - Componentes da janela Principal carregados com sucesso
+13/02/15 01:06 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 01:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 01:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:598 - Processo dos Produtos terminada!
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:613 - Processando Estoque...
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:682 - Processo do Estoque Terminado!
+13/02/15 01:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:105 - Iniciando Threads
+13/02/15 01:07 [AWT-EventQueue-0]  INFO FrmBatuta.java:110 - Threads Inciadas com sucesso
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:384 - Processando Produtos
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:598 - Processo dos Produtos terminada!
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:613 - Processando Estoque...
+13/02/15 01:07 [Thread Processar Opções]  INFO FrmBatuta.java:682 - Processo do Estoque Terminado!
+13/02/15 01:29 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 01:29 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 01:29 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 01:29 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 01:29 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 01:29 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 01:29 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 01:29 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 01:29 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+13/02/15 01:29 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+13/02/15 01:29 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 01:29 [AWT-EventQueue-0]  INFO FrmBatuta.java:107 - Iniciando Threads
+13/02/15 01:29 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:386 - Processando Produtos
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:600 - Processo dos Produtos terminada!
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:615 - Processando Estoque...
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:684 - Processo do Estoque Terminado!
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:696 - Processando Grupo...
+13/02/15 01:29 [Thread Processar Opções]  INFO FrmBatuta.java:745 - Processo do Grupo Terminado!
+13/02/15 01:31 [main]  INFO Migrador.java:159 - Inciando a aplicação
+13/02/15 01:31 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+13/02/15 01:31 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+13/02/15 01:31 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+13/02/15 01:31 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+13/02/15 01:31 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+13/02/15 01:31 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+13/02/15 01:31 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+13/02/15 01:31 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+13/02/15 01:31 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+13/02/15 01:31 [main]  INFO Migrador.java:79 - Janela principal carregada
+13/02/15 01:31 [AWT-EventQueue-0]  INFO FrmBatuta.java:107 - Iniciando Threads
+13/02/15 01:31 [AWT-EventQueue-0]  INFO FrmBatuta.java:112 - Threads Inciadas com sucesso
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:386 - Processando Produtos
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:600 - Processo dos Produtos terminada!
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:615 - Processando Estoque...
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:684 - Processo do Estoque Terminado!
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:696 - Processando Grupo...
+13/02/15 01:31 [Thread Processar Opções]  INFO FrmBatuta.java:745 - Processo do Grupo Terminado!
+23/02/15 00:21 [main]  INFO Migrador.java:159 - Inciando a aplicação
+23/02/15 00:21 [main]  INFO Migrador.java:82 - Iniciando verificação do arquivo de configuração do banco de dados
+23/02/15 00:21 [main]  INFO Migrador.java:83 - Verificando se a pasta que guarda o arquivo de configuração existe
+23/02/15 00:21 [main]  INFO Migrador.java:150 - Pasta que armazena o arquivo de configuração existe
+23/02/15 00:21 [main]  INFO Migrador.java:151 - Já existe um arquivo de configuração
+23/02/15 00:21 [main]  INFO Migrador.java:41 - Aplicando LookAndFeel WebLaf na Aplicação
+23/02/15 00:21 [main]  INFO Migrador.java:44 - LookAndFeel Weblaf aplicado na aplicação
+23/02/15 00:21 [main]  INFO Migrador.java:73 - Carregando janela principal da aplicação
+23/02/15 00:21 [main]  INFO FrmBatuta.java:88 - Carregando componentes da Janela Principal
+23/02/15 00:21 [main]  INFO FrmBatuta.java:92 - Componentes da janela Principal carregados com sucesso
+23/02/15 00:21 [main]  INFO Migrador.java:79 - Janela principal carregada
