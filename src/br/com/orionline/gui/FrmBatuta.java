@@ -74,6 +74,7 @@ public class FrmBatuta extends WebFrame {
     //Variáveis de conexão
     Conecta cx;
     Conecta cx2;
+    Conecta cx3;
     
     //Threads
     ProcessarOpcoesSelecionadas opcoesSelecionadas = new ProcessarOpcoesSelecionadas();
@@ -96,7 +97,7 @@ public class FrmBatuta extends WebFrame {
         //Botão processar e suas definições
         btnProcessar = WebButton.createIconWebButton(loadIcon("/br/com/orionline/imagens/process.png"), StyleConstants.smallRound, true);
         HotkeyManager.registerHotkey(this, btnProcessar, Hotkey.F5, new ButtonHotkeyRunnable(btnProcessar, 50), TooltipWay.trailing);
-        TooltipManager.setTooltip(btnProcessar, "Processar Migração do itens Selecionados", TooltipWay.down);
+        TooltipManager.setTooltip(btnProcessar, "Processar Migração do itens Selecionados", TooltipWay.trailing);
         btnProcessar.addActionListener((ActionEvent e) -> {
             if ( !chCodigoBarras.isSelected() && !chEstoque.isSelected()
                     && !chProdutos.isSelected() && !chGrupo.isSelected() ){
@@ -119,14 +120,14 @@ public class FrmBatuta extends WebFrame {
         //Botão ConfigDB e suas definições
         btnConfigDB = WebButton.createIconWebButton(loadIcon("/br/com/orionline/imagens/database_process.png"), StyleConstants.smallRound, true);
         HotkeyManager.registerHotkey(this, btnConfigDB, Hotkey.ALT_C, new ButtonHotkeyRunnable(btnConfigDB, 50), TooltipWay.trailing);
-        TooltipManager.setTooltip(btnConfigDB, "Configurar Banco de Dados", TooltipWay.down, 0);
+        TooltipManager.setTooltip(btnConfigDB, "Configurar Banco de Dados", TooltipWay.trailing, 0);
         btnConfigDB.addActionListener((ActionEvent e) -> {
             showConfigDB();
         });
         //Botão sair e sua definições
         btnSair = WebButton.createIconWebButton(loadIcon("/br/com/orionline/imagens/remove.png"), StyleConstants.smallRound, true);
         HotkeyManager.registerHotkey(this, btnSair, Hotkey.ESCAPE, new ButtonHotkeyRunnable(btnSair, 50), TooltipWay.trailing);
-        TooltipManager.setTooltip(btnSair, "Fecha Migrador", TooltipWay.down, 0);
+        TooltipManager.setTooltip(btnSair, "Fecha Migrador", TooltipWay.up, 0);
         btnSair.addActionListener((ActionEvent e) -> {
             if ( isFocused() == true ){
                 System.exit(0);
@@ -200,6 +201,8 @@ public class FrmBatuta extends WebFrame {
         chEstoque = new javax.swing.JCheckBox();
         chGrupo = new javax.swing.JCheckBox();
         btnMarcarTodos = new javax.swing.JToggleButton();
+        jPanel3 = new javax.swing.JPanel();
+        chCodBarraEmDescricao = new javax.swing.JCheckBox();
         barraFerramentas = new WebToolBar(WebToolBar.HORIZONTAL);
         lblStatus = new WebLabel().setDrawShade(true).setShadeColor(Color.BLACK);
 
@@ -229,6 +232,32 @@ public class FrmBatuta extends WebFrame {
             }
         });
 
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Opções extras"));
+
+        chCodBarraEmDescricao.setText("Juntar codigo de barras a descrição?");
+        chCodBarraEmDescricao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chCodBarraEmDescricaoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(chCodBarraEmDescricao)
+                .addContainerGap(209, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(chCodBarraEmDescricao)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -240,6 +269,8 @@ public class FrmBatuta extends WebFrame {
                     .addComponent(chProdutos)
                     .addComponent(chEstoque)
                     .addComponent(chGrupo))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -250,14 +281,17 @@ public class FrmBatuta extends WebFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(chCodigoBarras)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(chProdutos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(chEstoque)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(chGrupo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(chCodigoBarras)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(chProdutos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(chEstoque)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(chGrupo))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addComponent(btnMarcarTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -289,7 +323,7 @@ public class FrmBatuta extends WebFrame {
                 .addGap(26, 26, 26)
                 .addComponent(lblStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(barraFerramentas, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addComponent(barraFerramentas, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -320,7 +354,9 @@ public class FrmBatuta extends WebFrame {
             btnMarcarTodos.setText("Desmarcar Todos");
             TooltipManager.setTooltip(btnMarcarTodos, "Desmarcar Todos os Itens", TooltipWay.down, 0);
             
-            chCodigoBarras.setSelected(true);
+            if ( !chCodBarraEmDescricao.isSelected() ){
+                chCodigoBarras.setSelected(true);
+            }
             chEstoque.setSelected(true);
             chProdutos.setSelected(true);
             chGrupo.setSelected(true);
@@ -328,22 +364,37 @@ public class FrmBatuta extends WebFrame {
             btnMarcarTodos.setText("Marcar Todos");
             TooltipManager.setTooltip(btnMarcarTodos, "Marcar Todos os Itens", TooltipWay.down, 0);
             
-            chCodigoBarras.setSelected(!true);
+            if ( !chCodBarraEmDescricao.isSelected() ){
+                chCodigoBarras.setSelected(!true);
+            }
+            
             chEstoque.setSelected(!true);
             chProdutos.setSelected(!true);
             chGrupo.setSelected(!true);
         }
     }//GEN-LAST:event_btnMarcarTodosActionPerformed
 
+    private void chCodBarraEmDescricaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chCodBarraEmDescricaoActionPerformed
+        if ( chCodBarraEmDescricao.isSelected() ){
+            chCodigoBarras.setSelected(false);
+            chCodigoBarras.setEnabled(false);
+        }else{
+            chCodigoBarras.setSelected(false);
+            chCodigoBarras.setEnabled(!false);
+        }
+    }//GEN-LAST:event_chCodBarraEmDescricaoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToolBar barraFerramentas;
     private javax.swing.JToggleButton btnMarcarTodos;
+    private javax.swing.JCheckBox chCodBarraEmDescricao;
     private javax.swing.JCheckBox chCodigoBarras;
     private javax.swing.JCheckBox chEstoque;
     private javax.swing.JCheckBox chGrupo;
     private javax.swing.JCheckBox chProdutos;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblStatus;
     // End of variables declaration//GEN-END:variables
 
@@ -371,10 +422,30 @@ public class FrmBatuta extends WebFrame {
                 lblStatus.setText("Iniciando Migração dos Codigos de Barras");
                 try {
                     Thread.sleep(1500);
+                    cx = new Conecta();
+                    cx2 = new Conecta();
                     cx.Conexao();
                     cx2.Conexao();
                     cx.executaSQL("select prodcod, prod_codbarra from produto where prod_codbarra is not null");
                     cx.executaSQL("select count(*) from produto where prod_codbarra is not nulll");
+                    cx.rs.first();
+                    cx2.rs.first();
+                    total = cx2.rs.getInt(1);
+                    cx2.desconecta();
+                    
+                    lblStatus.setText("Processando Produtos...");
+                    thProgress = new Thread(progresso);
+                    thProgress.start();
+                    
+                    do {
+                        regAtual += 1;
+                        
+                        
+                    } while (cx.rs.next());
+                    
+                    total = 0;
+                    regAtual = 0;
+                    cx.desconecta();
                 } catch (SQLException ex) {
                     JOptionPane.showMessageDialog(FrmBatuta.this, "Ocorreu um erro ao Processar Codigo Barras", "Migrador", JOptionPane.ERROR_MESSAGE);
                     logger.error("Erro ao processar Codigo de Barras", ex);
@@ -419,6 +490,8 @@ public class FrmBatuta extends WebFrame {
                         String genero;
                         String situacao;
                         String tributa;
+                        String descricao;
+                        
                         Double Comissao;
                         int secao;
                         String envBalanca;
@@ -430,10 +503,16 @@ public class FrmBatuta extends WebFrame {
                         //Conexões com o banco de dados
                         cx = new Conecta();
                         cx2 = new Conecta();
+                        cx3 = new Conecta();
                         cx.Conexao();
                         cx2.Conexao();
                         
-                        cx.executaSQL("select * from produto");
+                        cx.executaSQL("SELECT CASE WHEN SUBSTRING(p.PRODCOD FROM 1 FOR 1) = '0' and CHAR_LENGTH(P.PRODCOD) = 6 THEN\n"
+                                + "         '1'||SUBSTRING(p.PRODCOD FROM 2 FOR CHAR_LENGTH(p.PRODCOD))\n"
+                                + "       ELSE\n"
+                                + "         P.PRODCOD\n"
+                                + "       END AS CODIGO, p.*\n"
+                                + "FROM PRODUTO P");
                         cx2.executaSQL("select count(*) from produto");
                         cx.rs.first();
                         cx2.rs.first();
@@ -447,11 +526,28 @@ public class FrmBatuta extends WebFrame {
                             regAtual += 1;
                             
                             prodArq = new Produto();
-                            cdprod = cx.rs.getString("prodcod");
+                            cdprod = cx.rs.getString("CODIGO");
                             prodArq.setProcod(cdprod);
-                            prodArq.setDescricao(cx.rs.getString("prodnome")
+                            descricao = cx.rs.getString("prodnome")
                                     .replaceAll("[áàâãÁÀÂÃ]", "A").replaceAll("[éèêÉÈÊ]", "E").replaceAll("[íìîÍÌÎ]", "I")
-                                    .replaceAll("[óòôõÓÒÔÕ]", "O").replaceAll("[úùûÚÙÛ]", "U").replaceAll("[çÇ]", "C"));
+                                    .replaceAll("[óòôõÓÒÔÕ]", "O").replaceAll("[úùûÚÙÛ]", "U").replaceAll("[çÇ]", "C");
+                            //Este trecho de codigo irá jogar os codigos de barras junto com a descrição do produto
+                            // Se o chCodBarraEmDescricao estiver selecionado
+                            if ( chCodBarraEmDescricao.isSelected() ){
+                                cx3.Conexao();
+                                cx3.executaSQL("SELECT\n"
+                                        + "CASE WHEN COALESCE(PRODREFERENCIA, 0) > '0' THEN\n"
+                                        + "  ' - '||PRODREFERENCIA\n"
+                                        + "ELSE\n"
+                                        + "  ''\n"
+                                        + "END AS REF\n"
+                                        + "FROM PRODUTO WHERE PRODCOD = '" + cx.rs.getString("prodcod"));
+                                cx3.rs.first();
+                                prodArq.setDescricao(descricao + " - " + cx3.rs.getString("ref"));
+                                cx3.desconecta();
+                            }else{
+                                prodArq.setDescricao(descricao);
+                            }
                             prodArq.setDescricaoReduzidsa(cx.rs.getString("prod_nome_abrev")
                                     .replaceAll("[áàâãÁÀÂÃ]", "A").replaceAll("[éèêÉÈÊ]", "E").replaceAll("[íìîÍÌÎ]", "I")
                                     .replaceAll("[óòôõÓÒÔÕ]", "O").replaceAll("[úùûÚÙÛ]", "U").replaceAll("[çÇ]", "C"));
