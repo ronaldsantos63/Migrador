@@ -356,9 +356,9 @@ public class FrmBatuta extends WebFrame {
             
             if ( !chCodBarraEmDescricao.isSelected() ){
                 chCodigoBarras.setSelected(true);
+                chProdutos.setSelected(true);
             }
             chEstoque.setSelected(true);
-            chProdutos.setSelected(true);
             chGrupo.setSelected(true);
         }else{
             btnMarcarTodos.setText("Marcar Todos");
@@ -366,10 +366,10 @@ public class FrmBatuta extends WebFrame {
             
             if ( !chCodBarraEmDescricao.isSelected() ){
                 chCodigoBarras.setSelected(!true);
+                chProdutos.setSelected(!true);
             }
             
             chEstoque.setSelected(!true);
-            chProdutos.setSelected(!true);
             chGrupo.setSelected(!true);
         }
     }//GEN-LAST:event_btnMarcarTodosActionPerformed
@@ -378,9 +378,11 @@ public class FrmBatuta extends WebFrame {
         if ( chCodBarraEmDescricao.isSelected() ){
             chCodigoBarras.setSelected(false);
             chCodigoBarras.setEnabled(false);
+            chProdutos.setSelected(true);
         }else{
             chCodigoBarras.setSelected(false);
             chCodigoBarras.setEnabled(!false);
+            chProdutos.setSelected(false);
         }
     }//GEN-LAST:event_chCodBarraEmDescricaoActionPerformed
 
