@@ -535,9 +535,9 @@ public class FrmBatuta extends WebFrame {
                             // Se o chCodBarraEmDescricao estiver selecionado
                             if ( chCodBarraEmDescricao.isSelected() ){
                                 cx3.Conexao();
-                                cx3.executaSQL("SELECT\n"
-                                        + "CASE WHEN COALESCE(PRODREFERENCIA, 0) > '0' THEN\n"
-                                        + "  ' - '||PRODREFERENCIA\n"
+                                cx3.executaSQL("SELECT \n"
+                                        + "CASE WHEN COALESCE(PRODREFERENCIA, 0) > '0' THEN \n"
+                                        + "  ' - '||PRODREFERENCIA \n"
                                         + "ELSE\n"
                                         + "  ''\n"
                                         + "END AS REF\n"
