@@ -541,7 +541,7 @@ public class FrmBatuta extends WebFrame {
                                         + "ELSE\n"
                                         + "  ''\n"
                                         + "END AS REF\n"
-                                        + "FROM PRODUTO WHERE PRODCOD = '" + cx.rs.getString("prodcod"));
+                                        + "FROM PRODUTO WHERE PRODCOD = '" + cx.rs.getString("prodcod") + "'");
                                 cx3.rs.first();
                                 prodArq.setDescricao(descricao + " - " + cx3.rs.getString("ref"));
                                 cx3.desconecta();
