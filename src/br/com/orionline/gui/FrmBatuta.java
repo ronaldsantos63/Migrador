@@ -6,7 +6,9 @@
 package br.com.orionline.gui;
 
 import br.com.orionline.controle.Conecta;
+import br.com.orionline.entidade.Cliente;
 import br.com.orionline.entidade.CodigoAuxiliarProduto;
+import br.com.orionline.entidade.ContaReceber;
 import br.com.orionline.entidade.Estoque;
 import br.com.orionline.entidade.Grupo;
 import br.com.orionline.entidade.Produto;
@@ -40,9 +42,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.logging.Level;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import org.apache.log4j.Logger;
+import org.jdesktop.swingx.JXErrorPane;
+import org.jdesktop.swingx.error.ErrorInfo;
 
 /**
  *
@@ -70,6 +75,8 @@ public class FrmBatuta extends WebFrame {
     Secao secaoArq;
     Estoque estoqueArq;
     Grupo grupoArq;
+    Cliente cliArq;
+    ContaReceber contaArq;
     
     //Variáveis de conexão
     Conecta cx;
@@ -203,6 +210,8 @@ public class FrmBatuta extends WebFrame {
         btnMarcarTodos = new javax.swing.JToggleButton();
         jPanel3 = new javax.swing.JPanel();
         chCodBarraEmDescricao = new javax.swing.JCheckBox();
+        chClientes = new javax.swing.JCheckBox();
+        chContaReceber = new javax.swing.JCheckBox();
         barraFerramentas = new WebToolBar(WebToolBar.HORIZONTAL);
         lblStatus = new WebLabel().setDrawShade(true).setShadeColor(Color.BLACK);
 
@@ -258,6 +267,10 @@ public class FrmBatuta extends WebFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        chClientes.setText("Clientes");
+
+        chContaReceber.setText("Contas a Receber");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -265,16 +278,22 @@ public class FrmBatuta extends WebFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(chCodigoBarras)
-                    .addComponent(chProdutos)
-                    .addComponent(chEstoque)
-                    .addComponent(chGrupo))
-                .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMarcarTodos)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnMarcarTodos))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(chCodigoBarras)
+                                    .addComponent(chProdutos)
+                                    .addComponent(chEstoque)
+                                    .addComponent(chGrupo))
+                                .addGap(18, 18, 18)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(chClientes)
+                            .addComponent(chContaReceber))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -291,7 +310,11 @@ public class FrmBatuta extends WebFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(chGrupo))
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(chClientes)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(chContaReceber)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(btnMarcarTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -323,7 +346,7 @@ public class FrmBatuta extends WebFrame {
                 .addGap(26, 26, 26)
                 .addComponent(lblStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(barraFerramentas, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+                .addComponent(barraFerramentas, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -360,6 +383,8 @@ public class FrmBatuta extends WebFrame {
             }
             chEstoque.setSelected(true);
             chGrupo.setSelected(true);
+            chClientes.setSelected(true);
+            chContaReceber.setSelected(true);
         }else{
             btnMarcarTodos.setText("Marcar Todos");
             TooltipManager.setTooltip(btnMarcarTodos, "Marcar Todos os Itens", TooltipWay.down, 0);
@@ -371,6 +396,8 @@ public class FrmBatuta extends WebFrame {
             
             chEstoque.setSelected(!true);
             chGrupo.setSelected(!true);
+            chClientes.setSelected(!true);
+            chContaReceber.setSelected(!true);
         }
     }//GEN-LAST:event_btnMarcarTodosActionPerformed
 
@@ -389,8 +416,10 @@ public class FrmBatuta extends WebFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToolBar barraFerramentas;
     private javax.swing.JToggleButton btnMarcarTodos;
+    private javax.swing.JCheckBox chClientes;
     private javax.swing.JCheckBox chCodBarraEmDescricao;
     private javax.swing.JCheckBox chCodigoBarras;
+    private javax.swing.JCheckBox chContaReceber;
     private javax.swing.JCheckBox chEstoque;
     private javax.swing.JCheckBox chGrupo;
     private javax.swing.JCheckBox chProdutos;
@@ -855,6 +884,53 @@ public class FrmBatuta extends WebFrame {
                 } catch (SQLException ex) {
                     JOptionPane.showMessageDialog(FrmBatuta.this, "Ocorreu um erro ao Processar Grupo", "Migrador", JOptionPane.ERROR_MESSAGE);
                     logger.error("Erro ao processar Grupo", ex);
+                }
+            }
+            if ( chClientes.isSelected() ){
+                logger.info("Processando Clientes...");
+                try{
+                    lblStatus.setText("Iniciando a Migração dos Clientes");
+                    Thread.sleep(1500);
+                    
+                    File pasta = new File("arquivos");
+                    File arqTxt = new File(pasta+"/SYSPCLI.txt");
+                    if ( !pasta.exists() ){
+                        pasta.mkdir();
+                    }else{
+                        if (arqTxt.exists()) {
+                            arqTxt.delete();
+                        }
+                    }
+                    try( FileWriter arquivo = new FileWriter(arqTxt, true)){
+                        
+                        String linha;
+                        
+                        cx = new Conecta();
+                        cx2 = new Conecta();
+                        cx.Conexao();
+                        cx2.Conexao();
+                        cx.executaSQL("");
+                        
+                    } catch (IOException ex) {
+                        JXErrorPane.showDialog(FrmBatuta.this,
+                                new ErrorInfo("OrionLine Automação Comercial",
+                                        "Erro no processo dos Clientes ",
+                                        "<html><h1 style=><center>IOException: </center></h1>"
+                                                + "\n<h2>Não possivel localizar o arquivo: ("+ arqTxt +")</h2>"
+                                        + "<p><b>" + ex.fillInStackTrace()
+                                        + "<b></p></body></html>", "Erro", ex, Level.ALL, null));
+                    } catch (SQLException ex) {
+                        JXErrorPane.showDialog(FrmBatuta.this,
+                                new ErrorInfo("OrionLine Automação Comercial",
+                                        "Erro no processo dos Clientes ",
+                                        "<html><h1 style=><center>SQLException: </center></h1>"
+                                        + "\n<h2>Não foi possivel conectar ao banco de dados</h2>"
+                                        + "<p><b>" + ex.fillInStackTrace()
+                                        + "<b></p></body></html>", "Erro", ex, Level.ALL, null));
+                    }
+                    
+                }catch ( InterruptedException ex ){
+                    logger.error("Erro no tempo de espera do Cliente", ex);
                 }
             }
         }
