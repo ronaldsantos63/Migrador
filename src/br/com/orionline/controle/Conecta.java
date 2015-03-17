@@ -5,13 +5,17 @@
  */
 package br.com.orionline.controle;
 
+import br.com.orionline.gui.FrmBatuta;
 import br.com.orionline.util.LoadProperties;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
 import org.apache.log4j.Logger;
+import org.jdesktop.swingx.JXErrorPane;
+import org.jdesktop.swingx.error.ErrorInfo;
 
 /**
  *
@@ -52,6 +56,13 @@ public class Conecta {
             logger.info("SQL Executado com sucesso");
         } catch (SQLException ex) {
             logger.error("Erro ao executar SQL: " + sql, ex);
+            JXErrorPane.showDialog(null,
+                    new ErrorInfo("OrionLine Automação Comercial",
+                            "Erro na execução da query",
+                            "<html><h1 style=><center>IOException: </center></h1>"
+                            + "\n<h2>Comando sql que deu erro: "+ sql +"</h2>"
+                            + "<p><b>" + ex.fillInStackTrace()
+                            + "<b></p></body></html>", "Erro", ex, Level.ALL, null));
         }
     }
 
