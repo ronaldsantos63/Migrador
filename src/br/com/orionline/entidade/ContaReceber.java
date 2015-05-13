@@ -19,6 +19,7 @@ public class ContaReceber {
     private String c_reservado_1;
     private String c_reservado_2;
     private String c_reservado_3;
+    private String c_reservado_4;
     private String c_tipo_juros;
     private Double c_percentual_juros;
     private Double c_percentual_multa;
@@ -32,6 +33,7 @@ public class ContaReceber {
     private String t_nro_documento;
     private String t_tipo_pagamento;
     private String t_cod_agente;
+    private String t_cod_cliente;
     private String t_data_emissao;
     private String t_data_vencimento;
     private String t_data_ultimo_pagamento;
@@ -94,6 +96,14 @@ public class ContaReceber {
 
     public void setC_reservado_3(String c_reservado_3) {
         this.c_reservado_3 = c_reservado_3;
+    }
+    
+    public String getC_reservado_4(){
+        return c_reservado_4;
+    }
+    
+    public void setC_reservado_4(String c_reservado_4){
+        this.c_reservado_4 = c_reservado_4;
     }
 
     public String getC_tipo_juros() {
@@ -166,6 +176,14 @@ public class ContaReceber {
 
     public void setT_cod_agente(String t_cod_agente) {
         this.t_cod_agente = t_cod_agente;
+    }
+    
+    public String getT_cod_cliente(){
+        return t_cod_cliente;
+    }
+    
+    public void setT_cod_cliente(String t_cod_cliente){
+        this.t_cod_cliente = t_cod_cliente;
     }
 
     public String getT_data_emissao() {
