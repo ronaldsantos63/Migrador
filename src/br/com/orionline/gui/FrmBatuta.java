@@ -20,6 +20,7 @@ import com.alee.global.StyleConstants;
 import com.alee.laf.WebLookAndFeel;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
+import com.alee.laf.optionpane.WebOptionPane;
 import com.alee.laf.panel.WebPanel;
 import com.alee.laf.progressbar.WebProgressBar;
 import com.alee.laf.rootpane.WebFrame;
@@ -76,7 +77,8 @@ public class FrmBatuta extends WebFrame {
     Estoque estoqueArq;
     Grupo grupoArq;
     Cliente cliArq;
-    ContaReceber contaArq;
+    ContaReceber contrecCab;
+    ContaReceber contrecAbertaArq;
     
     //Variáveis de conexão
     Conecta cx;
@@ -107,7 +109,8 @@ public class FrmBatuta extends WebFrame {
         TooltipManager.setTooltip(btnProcessar, "Processar Migração do itens Selecionados", TooltipWay.trailing);
         btnProcessar.addActionListener((ActionEvent e) -> {
             if ( !chCodigoBarras.isSelected() && !chEstoque.isSelected()
-                    && !chProdutos.isSelected() && !chGrupo.isSelected() ){
+                    && !chProdutos.isSelected() && !chGrupo.isSelected()
+                    && !chClientes.isSelected() && !chContaReceber.isSelected() ){
                 JOptionPane.showMessageDialog(this, "Por favor selecione uma opção para processar", 
                         "Migrador", JOptionPane.INFORMATION_MESSAGE);
             }else{
@@ -370,6 +373,7 @@ public class FrmBatuta extends WebFrame {
         getAccessibleContext().setAccessibleDescription("Migrador");
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMarcarTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMarcarTodosActionPerformed
@@ -429,6 +433,20 @@ public class FrmBatuta extends WebFrame {
     private javax.swing.JLabel lblStatus;
     // End of variables declaration//GEN-END:variables
 
+    public String IncluirZeros(String texto, int tamMax) {
+        int max;
+        int zeros;
+        String txt;
+
+        max = tamMax;
+        txt = texto;
+        zeros = tamMax - txt.length();
+        for (int i = 0; i < zeros; i++) {
+            txt = "0".concat(txt);
+        }
+        return txt;
+    }
+    
     class processarProgresso implements Runnable{
 
         @Override
@@ -890,7 +908,7 @@ public class FrmBatuta extends WebFrame {
                 logger.info("Processando Clientes...");
                 try{
                     lblStatus.setText("Iniciando a Migração dos Clientes");
-                    Thread.sleep(1500);
+                    Thread.sleep(1000);
                     
                     File pasta = new File("arquivos");
                     File arqTxt = new File(pasta+"/SYSPCLI.txt");
@@ -909,7 +927,119 @@ public class FrmBatuta extends WebFrame {
                         cx2 = new Conecta();
                         cx.Conexao();
                         cx2.Conexao();
-                        cx.executaSQL("");
+                        cx.executaSQL("select * from cliente");
+                        cx2.executaSQL("select count(*) from cliente");
+                        
+                        cx.rs.first();
+                        cx2.rs.first();
+                        total = cx2.rs.getInt(1);
+                        cx2.desconecta();
+                        
+                        lblStatus.setText("Processando Clientes...");
+                        thProgress = new Thread(progresso);
+                        thProgress.start();
+                        
+                        do {
+                            
+                            regAtual += 1;
+                            
+                            cliArq = new Cliente();
+                            cliArq.setCodigo_cli(IncluirZeros(cx.rs.getString("clicod"), 15));
+                            cliArq.setDescricao(cx.rs.getString("clinome"));
+                            cliArq.setCpf_cnpj(cx.rs.getString("clicgc"));
+                            cliArq.setEndereco(cx.rs.getString("cliendcom"));
+                            cliArq.setBairro(cx.rs.getString("clibaicom"));
+                            cliArq.setCidade(cx.rs.getString("clicidcom"));
+                            cliArq.setUf(cx.rs.getString("cliufcom"));
+                            cliArq.setCep(cx.rs.getString("clicepcom"));
+                            cliArq.setTelefone(cx.rs.getString("clifone1com"));
+                            cliArq.setLimite_principal(cx.rs.getDouble("valor_limite"));
+                            cliArq.setLimite_principal_utilizado(cx.rs.getDouble("saldo"));
+                            cliArq.setStatus(cx.rs.getString("clisituacao"));
+                            cliArq.setFantasia(cx.rs.getString("cliapelido"));
+                            cliArq.setRg_ie(cx.rs.getString("cliinscest"));
+                            cliArq.setData_cadastro(cx.rs.getDate("clidatcad"));
+                            cliArq.setData_nascimento(cx.rs.getDate("dtnasc"));
+                            cliArq.setNome_pai(cx.rs.getString("nome_pai"));
+                            cliArq.setNome_mae(cx.rs.getString("nome_mae"));
+                            cliArq.setTipo_pessoa(cx.rs.getString("tipo_pessoa"));
+                            cliArq.setTelefone_secundario(cx.rs.getString("clifone2com"));
+                            cliArq.setFax(cx.rs.getString("clifaxcom"));
+                            cliArq.setPessoa_contato(cx.rs.getString("clicontato"));
+                            cliArq.setObservacao(cx.rs.getString("obs"));
+                            cliArq.setEmail(cx.rs.getString("cliemail"));
+                            cliArq.setPessoa_autorizou_cadastro(cx.rs.getString("aprovado_por"));
+                            cliArq.setComplemento_end_cliente(cx.rs.getString("complem_end"));
+                            
+                            linha = String.format(Locale.US, "%15.15s%-40.40s%14.14s%-45.45s%-15.15s"
+                                    + "%-20.20s%-2.2s%8.8s%12.12s%13.2f%13.2f%2.2s%3.3s%03d%-25.25s"
+                                    + "%20.20s%8.8s%8.8s%8.8s%-30.30s%-30.30s%1.1s%12.12s%12.12s"
+                                    + "%-15.15s%-45.45s%-15.15s%10.10s%-20.20s%2.2s%13.13s%-255.255s"
+                                    + "%-255.255s%10.10s%20.20s%5.5s%-70.70s%8.8s%7.7s%1.1s%1.1s%10.10s"
+                                    + "%-50.50s%-50.50s%1.1s%1.1s%1.1s%-40.40s%12.12s%-20.20s%10.10s%-50.50s"
+                                    + "%-20.20s%13.2f%40.40s%1.1s%-40.40s%8.8s%-40.40s%12.12s%-20.20s"
+                                    + "%20.20s%13.2f%-40.40s%12.12s%-50.50s%-40.40s%12.12s%-50.50s"
+                                    + "%-40.40s%12.12s%-40.40s%12.12s%-15.15s%-15.15s%-15.15s%1.1s%-15.15s"
+                                    + "%-15.15s%-15.15s%1.1s%20.20s%-40.40s%-10.10s%12.12s%-40.40s%-10.10s%12.12s"
+                                    + "%-20.20s%-20.20s%-20.20s%-20.20s%-40.40s%1.1s%-20.20s%2.2s%-20.20s"
+                                    + "%-6.6s%1.1s%3.3s%-5.5s%-5.5s%6.6s%6.6s%-12.12s%-12.12s%4.4s%13.2f%13.2f"
+                                    + "%6.6s%6.6s\n",
+                                    cliArq.getCodigo_cli(), cliArq.getDescricao(), cliArq.getCpf_cnpj(),
+                                    cliArq.getEndereco(), cliArq.getBairro(), cliArq.getCidade(),
+                                    cliArq.getUf(), cliArq.getCep(), cliArq.getTelefone(),
+                                    cliArq.getLimite_principal(), cliArq.getLimite_principal_utilizado(),
+                                    cliArq.getStatus(), cliArq.getTabela_prazo(), cliArq.getPrazo(),
+                                    cliArq.getFantasia(), cliArq.getRg_ie(), cliArq.getData_cadastro(),
+                                    cliArq.getData_nascimento(), cliArq.getData_bloqueio(),
+                                    cliArq.getNome_pai(), cliArq.getNome_mae(), cliArq.getTipo_pessoa(),
+                                    cliArq.getTelefone_secundario(), cliArq.getFax(),
+                                    cliArq.getPessoa_contato(), cliArq.getEndereco_cob(),
+                                    cliArq.getBairro_cob(), cliArq.getCep_cob(), cliArq.getCidade_cob(),
+                                    cliArq.getUf_cob(), cliArq.getDesconto(), cliArq.getObservacao(),
+                                    cliArq.getRestricoes(), cliArq.getAdm_cartao_credito(),
+                                    cliArq.getNum_cartao_credito(), cliArq.getValidade_cartao_credito(),
+                                    cliArq.getEmail(), cliArq.getData_ultima_alteracao(), cliArq.getCnae(),
+                                    cliArq.getSexo(), cliArq.getTipo_residencia(), cliArq.getTempo_residencia(),
+                                    cliArq.getVeiculo(), cliArq.getPonto_referencia(), cliArq.getComp_residencia(),
+                                    cliArq.getComp_renda(), cliArq.getCom_renda_conj(), cliArq.getEmpresa_trabalho(),
+                                    cliArq.getTelefone_trabalho(), cliArq.getCargo_trabalho(), cliArq.getTempo_trabalho(),
+                                    cliArq.getEndereco_trabalho(), cliArq.getNome_chefe_trabalho(), cliArq.getSalario(),
+                                    cliArq.getOutras_renda(), cliArq.getEstado_civil(), cliArq.getNome_conjuge(),
+                                    cliArq.getData_nascimento_conj(), cliArq.getEmpresa_trabalho_conj(),
+                                    cliArq.getTelefone_trabalho_conj(), cliArq.getCargo_conj(),
+                                    cliArq.getNome_chefe_trabalho_conj(), cliArq.getSalario_conj(),
+                                    cliArq.getReferencia_pessoal_nome1(), cliArq.getTelefone_referencia_1(),
+                                    cliArq.getEndereco_referencia_1(), cliArq.getReferencia_comercial_nome_2(),
+                                    cliArq.getTelefone_referencia_2(), cliArq.getEndereco_referencia_2(),
+                                    cliArq.getReferencia_comercial_nome1(), cliArq.getTelefone_referencia_comercial_1(),
+                                    cliArq.getReferencia_comercial_nome_2(), cliArq.getTelefone_referencia_comercial_2(),
+                                    cliArq.getReferencia_bancaria_1(), cliArq.getReferencia_bancaria_1_agencia(),
+                                    cliArq.getReferencia_bancaria_1_conta(), cliArq.getReferencia_tipo_conta_bancaria_1(),
+                                    cliArq.getReferencia_bancaria_2(), cliArq.getReferencia_bancaria_2_agencia(),
+                                    cliArq.getReferencia_bancaria_2_conta(), cliArq.getReferencia_tipo_conta_bancaria_2(),
+                                    cliArq.getTicket(), cliArq.getDependente_1(), cliArq.getDependente_1_grau_parentesco(),
+                                    cliArq.getDependente_1_telefone(), cliArq.getDependente_2(),
+                                    cliArq.getDependente_2_grau_parentesco(), cliArq.getDependente_2_telefone(),
+                                    cliArq.getSituacao_spc(), cliArq.getNome_contato_pessoa_spc(),
+                                    cliArq.getSituacao_tele_cheque(), cliArq.getNome_pessoa_tele_cheque(),
+                                    cliArq.getObservacao_situacao(), cliArq.getSituacao_aprovacao_cad(),
+                                    cliArq.getPessoa_autorizou_cadastro(), cliArq.getDia_fecha_fatura(), cliArq.getNaturalidade(),
+                                    cliArq.getOrgao_rg(), cliArq.getTipo_preco(), cliArq.getRamo_atividade(),
+                                    cliArq.getComplemento_bairro(), cliArq.getComplemento_bairro_end_cob(),
+                                    cliArq.getNumero_endereco_cliente(), cliArq.getNumero_endereco_cob(),
+                                    cliArq.getComplemento_end_cliente(), cliArq.getComplemento_end_cob(),
+                                    cliArq.getVendedor(), cliArq.getLimite_secundario(), cliArq.getLimite_secundario_utilizado(),
+                                    cliArq.getCodigo_interno(), cliArq.getCodigo_vendedor()
+                            );
+                            
+                            arquivo.write(linha);
+                            arquivo.flush();
+                            
+                        } while (cx.rs.next());
+                        lblStatus.setText("Migração dos Clientes Concluida!");
+                        Thread.sleep(1500);
+                        cx.desconecta();
+                        logger.info("Processo dos Clientes Terminado!");
                         
                     } catch (IOException ex) {
                         JXErrorPane.showDialog(FrmBatuta.this,
@@ -931,6 +1061,226 @@ public class FrmBatuta extends WebFrame {
                     
                 }catch ( InterruptedException ex ){
                     logger.error("Erro no tempo de espera do Cliente", ex);
+                }
+            }
+            if( chContaReceber.isSelected() ){
+                logger.debug("Processando Contas a Receber...");
+                lblStatus.setText("Iniciando Migração das Contas a Receber...");
+                File pasta = new File("arquivos");
+                File txtCrc = new File(pasta + "/SYSPCRC.txt");
+                if (!pasta.exists()) {
+                    pasta.mkdir();
+                } else {
+                    if (txtCrc.exists()) {
+                        txtCrc.delete();
+                    }
+                }
+                try (FileWriter arquivo = new FileWriter(txtCrc, true)) {
+                    //Linha que será gravada
+                    String linha;
+                    String linha2;
+                    String linha3;
+
+                    //Conexões com o banco de dados
+                    cx = new Conecta();
+                    cx2 = new Conecta();
+                    cx.Conexao();
+                    cx2.Conexao();
+
+                    //
+                    Thread.sleep(1000);
+                    lblStatus.setText("Processando Contas a Receber...");
+
+                    cx.executaSQL("select * from receber where ctarecquitado not in ('S');");
+                    cx2.executaSQL("select count(*) from receber where ctarecquitado not in ('S');");
+                    cx.rs.first();
+                    cx2.rs.first();
+                    total = cx2.rs.getInt(1);
+                    cx2.desconecta();
+                    
+                    thProgress = new Thread(progresso);
+                    thProgress.start();
+
+                    //Variaveis para ajudar na formatação do dados
+                    DateFormat df = new SimpleDateFormat("ddMMyyyy");
+                    df.setLenient(false);
+
+                    String nro_doc;
+                    
+                    Double valor_pago = null;
+                    
+                    String dtaEmisao;
+                    String dtaVencimento;
+                    String dtaUltimoPagamento;
+                    String observacao;
+
+                    Date dataEmissao;
+                    Date dataVencimento;
+                    Date dataUltimoPagemento;
+
+                    do {
+                        regAtual += 1;
+
+                        contrecCab = new ContaReceber();
+                        System.out.println("Campo01");
+                        contrecCab.setC_tipo_registro("C");
+                        System.out.println("Campo02");
+                        contrecCab.setC_reservado_1("");
+                        System.out.println("Campo03");
+                        contrecCab.setC_reservado_2("");
+                        System.out.println("Campo04");
+                        contrecCab.setC_reservado_3("");
+                        System.out.println("Campo05");
+                        contrecCab.setC_reservado_4("");
+                        System.out.println("Campo06");
+                        contrecCab.setC_tipo_juros("S");
+                        System.out.println("Campo07");
+                        contrecCab.setC_percentual_juros(0.0);
+                        System.out.println("Campo08");
+                        contrecCab.setC_percentual_multa(0.0);
+                        System.out.println("Campo09");
+                        contrecCab.setC_percentual_desconto(0.0);
+
+                        System.out.println("Campo10");
+
+                        linha = String.format(Locale.US, "%1s%-4s%-3s%-3s%-3s%1s%3.4f%3.4f%3.4f\n",
+                                contrecCab.getC_tipo_registro(), contrecCab.getC_reservado_1(),
+                                contrecCab.getC_reservado_2(), contrecCab.getC_reservado_3(),
+                                contrecCab.getC_reservado_4(), contrecCab.getC_tipo_juros(),
+                                contrecCab.getC_percentual_juros(), contrecCab.getC_percentual_multa(),
+                                contrecCab.getC_percentual_desconto());
+                        System.out.println("Campo11");
+                        arquivo.write(linha);
+                        System.out.println("Campo12");
+                        arquivo.flush();
+
+                        contrecAbertaArq = new ContaReceber();
+                        System.out.println("Campo13");
+                        contrecAbertaArq.setT_tipo_registro("T");
+                        System.out.println("Campo14");
+                        contrecAbertaArq.setT_loja("0001");
+                        System.out.println("Campo15");
+                        nro_doc = cx.rs.getString("ctarecnr");
+                        nro_doc = nro_doc.split("-")[1];
+                        System.err.println("numero doc: " + nro_doc);
+                        contrecAbertaArq.setT_nro_documento(nro_doc);
+                        System.out.println("Campo16");
+                        valor_pago = cx.rs.getDouble("ctarecvlrpago");
+                        if ( valor_pago > 0){
+                            contrecAbertaArq.setT_tipo_pagamento("P");
+                        }else{
+                            contrecAbertaArq.setT_tipo_pagamento("A");
+                        }
+                        System.out.println("Campo17");
+                        contrecAbertaArq.setT_cod_agente("0000");
+                        System.out.println("Campo18");
+                        contrecAbertaArq.setT_cod_cliente(IncluirZeros(cx.rs.getString("clicod"), 15));
+                        System.out.println("Campo19");
+                        dataEmissao = cx.rs.getDate("ctarecdatemi");
+                        if (dataEmissao == null) {
+                            contrecAbertaArq.setT_data_emissao("");
+                        } else {
+                            dtaEmisao = df.format(dataEmissao);
+                            contrecAbertaArq.setT_data_emissao(dtaEmisao);
+                        }
+                        System.out.println("Campo20");
+                        dataVencimento = cx.rs.getDate("ctarecdatven");
+                        if (dataVencimento == null) {
+                            dtaVencimento = "";
+                            contrecAbertaArq.setT_data_vencimento("");
+                        } else {
+                            dtaVencimento = df.format(dataVencimento);
+                            contrecAbertaArq.setT_data_vencimento(dtaVencimento);
+                        }
+                        System.out.println("Campo21");
+                        contrecAbertaArq.setT_data_ultimo_pagamento("");
+                        System.out.println("Campo22");
+                        contrecAbertaArq.setT_valor_nominal(cx.rs.getDouble("ctarecvlrdocto"));
+                        System.out.println("Campo23");
+                        contrecAbertaArq.setT_valor_recebido(valor_pago);
+                        System.out.println("Campo24");
+                        contrecAbertaArq.setT_valor_devido(cx.rs.getDouble("saldo_receber"));
+                        System.out.println("Campo24");
+                        observacao = cx.rs.getString("condpagto");
+                        if (observacao == null || observacao.isEmpty()) {
+                            contrecAbertaArq.setT_observacao("");
+                        } else {
+                            contrecAbertaArq.setT_observacao(observacao);
+                        }
+                        System.out.println("Campo25");
+                        contrecAbertaArq.setT_cod_auxiliar("");
+                        System.out.println("Campo26");
+                        contrecAbertaArq.setT_data_calculo_valor_devido(dtaVencimento);
+                        System.out.println("Campo27");
+                        contrecAbertaArq.setT_sequencial_sysac("");
+
+                        System.out.println("Campo28");
+                        linha2 = String.format(Locale.US, "%-1s%4s%-10.10s%-1.1s%4.4s"
+                                + "%15.15s%8.8s%8.8s%8.8s%12.2f%12.2f%12.2f%-45.45s%6.6s%8.8s%6.6s\n",
+                                contrecAbertaArq.getT_tipo_registro(), contrecAbertaArq.getT_loja(),
+                                contrecAbertaArq.getT_nro_documento(), contrecAbertaArq.getT_tipo_pagamento(),
+                                contrecAbertaArq.getT_cod_agente(), contrecAbertaArq.getT_cod_cliente(),
+                                contrecAbertaArq.getT_data_emissao(), contrecAbertaArq.getT_data_vencimento(),
+                                contrecAbertaArq.getT_data_ultimo_pagamento(), contrecAbertaArq.getT_valor_nominal(),
+                                contrecAbertaArq.getT_valor_recebido(), contrecAbertaArq.getT_valor_devido(),
+                                contrecAbertaArq.getT_observacao(), contrecAbertaArq.getT_cod_auxiliar(),
+                                contrecAbertaArq.getT_data_calculo_valor_devido(), contrecAbertaArq.getT_sequencial_sysac());
+                        System.out.println("Campo26");
+                        arquivo.write(linha2);
+                        System.out.println("Campo27");
+                        arquivo.flush();
+
+                    } while (cx.rs.next());
+                    arquivo.close();
+                    cx.desconecta();
+                    total = 0;
+                    regAtual = 0;
+                    lblStatus.setText("Migração das Contas a Receber Concluido!");
+                    Thread.sleep(1000);
+                    logger.debug("Migração das Contas a Receber Concluido");
+
+                } catch (IOException ex) {
+                    logger.error("Erro no processo das Contas a Receber", ex);
+                    JXErrorPane.showDialog(FrmBatuta.this,
+                            new ErrorInfo("Migrador",
+                                    "Erro no processo das Contas a Receber",
+                                    "<html><center>IOException: "
+                                    + "</center><p><b>" + ex.fillInStackTrace() + "<b></p></html>",
+                                    "Erro", ex, Level.ALL, null));
+                } catch (InterruptedException ex) {
+                    logger.error("Erro no processo das Contas a Receber", ex);
+                    JXErrorPane.showDialog(FrmBatuta.this,
+                            new ErrorInfo("Migrador",
+                                    "Erro no processo das Contas a Receber",
+                                    "<html><center>InterruptedException: "
+                                    + "</center><p><b>" + ex.fillInStackTrace() + "<b></p></html>",
+                                    "Erro", ex, Level.ALL, null));
+                } catch (SQLException ex) {
+                    logger.error("Erro no processo das Contas a Receber", ex);
+                    JXErrorPane.showDialog(FrmBatuta.this,
+                            new ErrorInfo("Migrador",
+                                    "Erro no processo das Contas a Receber",
+                                    "<html><center>SQLException: "
+                                    + "</center><p><b>" + ex.fillInStackTrace() + "<b></p></html>",
+                                    "Erro", ex, Level.ALL, null));
+                }
+            }
+            if (new File("arquivos").exists() || new File("").length() > 0) {
+                int result = WebOptionPane.showConfirmDialog(FrmBatuta.this,
+                        "Deseja abrir a pasta onde os arquivo foram salvos?",
+                        "Migrador", WebOptionPane.YES_NO_OPTION);
+                if (result == WebOptionPane.YES_OPTION) {
+                    try {
+                        Runtime.getRuntime().exec("explorer " + System.getProperty("user.dir") + "\\arquivos");
+                    } catch (IOException ex) {
+                        logger.error("Erro no processo das Seções", ex);
+                        JXErrorPane.showDialog(FrmBatuta.this,
+                                new ErrorInfo("Migrador",
+                                        "Erro ao abrir os arquivos Migrados",
+                                        "<html><center>IOException: "
+                                        + "</center><p><b>" + ex.fillInStackTrace() + "<b></p></html>",
+                                        "Erro", ex, Level.ALL, null));
+                    }
                 }
             }
         }
