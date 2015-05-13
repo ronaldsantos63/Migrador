@@ -5,6 +5,10 @@
  */
 package br.com.orionline.entidade;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author ronald santos
@@ -12,117 +16,120 @@ package br.com.orionline.entidade;
 public class Cliente {
     
     private String codigo_cli;
-    private String descricao;
-    private String cpf_cnpj;
-    private String endereco;
-    private String bairro;
-    private String cidade;
-    private String uf;
-    private String cep;
-    private String telefone;
+    private String descricao = "";
+    private String cpf_cnpj = "";
+    private String endereco = "";
+    private String bairro = "";
+    private String cidade = "";
+    private String uf = "";
+    private String cep = "";
+    private String telefone = "";
     private Double limite_principal;
     private Double limite_principal_utilizado;
-    private Integer status;
-    private String tabela_prazo;
-    private Integer prazo;
-    private String fantasia;
-    private String rg_ie;
-    private String data_cadastro;
-    private String data_nascimento;
-    private String data_bloqueio;
-    private String nome_pai;
-    private String nome_mae;
-    private String tipo_pessoa;
-    private String telefone_secundario;
-    private String fax;
-    private String pessoa_contato;
-    private String endereco_cob;
-    private String bairro_cob;
-    private String cep_cob;
-    private String cidade_cob;
-    private String uf_cob;
-    private String desconto;
-    private String observacao;
-    private String restricoes;
-    private String adm_cartao_credito;
-    private String num_cartao_credito;
-    private String validade_cartao_credito;
-    private String email;
-    private String data_ultima_alteracao;
-    private String cnae;
-    private String sexo;
-    private String tipo_residencia;
-    private String tempo_residencia;
-    private String veiculo;
-    private String ponto_referencia;
-    private String comp_residencia;
-    private String comp_renda;
-    private String com_renda_conj;
-    private String empresa_trabalho;
-    private String telefone_trabalho;
-    private String cargo_trabalho;
-    private String tempo_trabalho;
-    private String endereco_trabalho;
-    private String nome_chefe_trabalho;
-    private Double salario;
-    private String outras_renda;
-    private String estado_civil;
-    private String nome_conjuge;
-    private String data_nascimento_conj;
-    private String empresa_trabalho_conj;
-    private String telefone_trabalho_conj;
-    private String cargo_conj;
-    private String nome_chefe_trabalho_conj;
-    private Double salario_conj;
-    private String referencia_pessoal_nome1;
-    private String telefone_referencia_1;
-    private String endereco_referencia_1;
-    private String referencia_pessoal_nome2;
-    private String telefone_referencia_2;
-    private String endereco_referencia_2;
-    private String referencia_comercial_nome1;
-    private String telefone_referencia_comercial_1;
-    private String referencia_comercial_nome_2;
-    private String telefone_referencia_comercial_2;
-    private String referencia_bancaria_1;
-    private String referencia_bancaria_1_agencia;
-    private String referencia_bancaria_1_conta;
-    private String referencia_tipo_conta_bancaria_1;
-    private String referencia_bancaria_2;
-    private String referencia_bancaria_2_agencia;
-    private String referencia_bancaria_2_conta;
-    private String referencia_tipo_conta_bancaria_2;
-    private String ticket;
-    private String dependente_1;
-    private String dependente_1_grau_parentesco;
-    private String dependente_1_telefone;
-    private String dependente_2;
-    private String dependente_2_grau_parentesco;
-    private String dependente_2_telefone;
-    private String situacao_spc;
-    private String nome_contato_pessoa_spc;
-    private String situacao_tele_cheque;
-    private String nome_pessoa_tele_cheque;
-    private String observacao_situacao;
-    private String situacao_aprovacao_cad;
-    private String pessoa_autorizou_cadastro;
-    private String dia_fecha_fatura;
-    private String naturalidade;
-    private String orgao_rg;
-    private String tipo_preco;
-    private String ramo_atividade;
-    private String complemento_bairro;
-    private String complemento_bairro_end_cob;
-    private String numero_endereco_cliente;
-    private String numero_endereco_cob;
-    private String complemento_end_cliente;
-    private String complemento_end_cob;
-    private String vendedor;
-    private Double limite_secundario;
-    private Double limite_secundario_utilizado;
-    private String codigo_interno;
-    private String codigo_vendedor;
+    private String status = "01";
+    private String tabela_prazo = "PRZ";
+    private Integer prazo = 30;
+    private String fantasia = "";
+    private String rg_ie = "";
+    private String data_cadastro = "";
+    private String data_nascimento = "";
+    private String data_bloqueio = "";
+    private String nome_pai = "";
+    private String nome_mae = "";
+    private String tipo_pessoa = "F";
+    private String telefone_secundario = "";
+    private String fax = "";
+    private String pessoa_contato = "";
+    private String endereco_cob = "";
+    private String bairro_cob = "";
+    private String cep_cob = "";
+    private String cidade_cob = "";
+    private String uf_cob = "";
+    private String desconto = "";
+    private String observacao = "";
+    private String restricoes = "";
+    private String adm_cartao_credito = "";
+    private String num_cartao_credito = "";
+    private String validade_cartao_credito = "";
+    private String email = "";
+    private String data_ultima_alteracao = "";
+    private String cnae = "";
+    private String sexo = "E";
+    private String tipo_residencia = "P";
+    private String tempo_residencia = "";
+    private String veiculo = "";
+    private String ponto_referencia = "";
+    private String comp_residencia = "N";
+    private String comp_renda = "N";
+    private String com_renda_conj = "N";
+    private String empresa_trabalho = "";
+    private String telefone_trabalho = "";
+    private String cargo_trabalho = "";
+    private String tempo_trabalho = "";
+    private String endereco_trabalho = "";
+    private String nome_chefe_trabalho = "";
+    private Double salario = 0.0;
+    private String outras_renda = "";
+    private String estado_civil = "O";
+    private String nome_conjuge = "";
+    private String data_nascimento_conj = "";
+    private String empresa_trabalho_conj = "";
+    private String telefone_trabalho_conj = "";
+    private String cargo_conj = "";
+    private String nome_chefe_trabalho_conj = "";
+    private Double salario_conj = 0.0;
+    private String referencia_pessoal_nome1 = "";
+    private String telefone_referencia_1 = "";
+    private String endereco_referencia_1 = "";
+    private String referencia_pessoal_nome2 = "";
+    private String telefone_referencia_2 = "";
+    private String endereco_referencia_2 = "";
+    private String referencia_comercial_nome1 = "";
+    private String telefone_referencia_comercial_1 = "";
+    private String referencia_comercial_nome_2 = "";
+    private String telefone_referencia_comercial_2 = "";
+    private String referencia_bancaria_1 = "";
+    private String referencia_bancaria_1_agencia = "";
+    private String referencia_bancaria_1_conta = "";
+    private String referencia_tipo_conta_bancaria_1 = "";
+    private String referencia_bancaria_2 = "";
+    private String referencia_bancaria_2_agencia = "";
+    private String referencia_bancaria_2_conta = "";
+    private String referencia_tipo_conta_bancaria_2 = "";
+    private String ticket = "";
+    private String dependente_1 = "";
+    private String dependente_1_grau_parentesco = "";
+    private String dependente_1_telefone = "";
+    private String dependente_2 = "";
+    private String dependente_2_grau_parentesco = "";
+    private String dependente_2_telefone = "";
+    private String situacao_spc = "";
+    private String nome_contato_pessoa_spc = "";
+    private String situacao_tele_cheque = "";
+    private String nome_pessoa_tele_cheque = "";
+    private String observacao_situacao = "";
+    private String situacao_aprovacao_cad = "P";
+    private String pessoa_autorizou_cadastro = "";
+    private String dia_fecha_fatura = "";
+    private String naturalidade = "";
+    private String orgao_rg = "SSPPA";
+    private String tipo_preco = "1";
+    private String ramo_atividade = "000";
+    private String complemento_bairro = "";
+    private String complemento_bairro_end_cob = "";
+    private String numero_endereco_cliente = "";
+    private String numero_endereco_cob = "";
+    private String complemento_end_cliente = "";
+    private String complemento_end_cob = "";
+    private String vendedor = "";
+    private Double limite_secundario = 0.0;
+    private Double limite_secundario_utilizado = 0.0;
+    private String codigo_interno = "";
+    private String codigo_vendedor = "";
 
+    //Variavéis para formatação de datas
+    DateFormat dfEUA = new SimpleDateFormat("yyyyMMdd");
+    
     public String getCodigo_cli() {
         return codigo_cli;
     }
@@ -136,7 +143,19 @@ public class Cliente {
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        try{
+            if (!descricao.trim().isEmpty()) {
+                descricao = descricao.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÕÕ]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C");
+            }
+            this.descricao = descricao;
+        } catch ( NullPointerException ex){
+            this.descricao = "";
+        } catch ( Exception ex){
+            this.descricao = "";
+        }
     }
 
     public String getCpf_cnpj() {
@@ -144,7 +163,14 @@ public class Cliente {
     }
 
     public void setCpf_cnpj(String cpf_cnpj) {
-        this.cpf_cnpj = cpf_cnpj;
+        try {
+            if ( !cpf_cnpj.trim().isEmpty()) {
+                cpf_cnpj = cpf_cnpj.replaceAll("[^0-9]", "");
+            }
+            this.cpf_cnpj = cpf_cnpj;
+        } catch (Exception e) {
+            this.cpf_cnpj = "";
+        }
     }
 
     public String getEndereco() {
@@ -152,7 +178,17 @@ public class Cliente {
     }
 
     public void setEndereco(String endereco) {
-        this.endereco = endereco;
+        try {
+            if ( !endereco.trim().isEmpty() ){
+                endereco = endereco.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.endereco = endereco;
+        } catch (Exception e) {
+            this.endereco = "";
+        }
     }
 
     public String getBairro() {
@@ -160,7 +196,17 @@ public class Cliente {
     }
 
     public void setBairro(String bairro) {
-        this.bairro = bairro;
+        try {
+            if ( !bairro.trim().isEmpty()){
+                bairro = bairro.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.bairro = bairro;
+        } catch (Exception e) {
+            this.bairro = "";
+        }
     }
 
     public String getCidade() {
@@ -168,7 +214,17 @@ public class Cliente {
     }
 
     public void setCidade(String cidade) {
-        this.cidade = cidade;
+        try {
+            if ( !cidade.trim().isEmpty() ){
+                cidade = cidade.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.cidade = cidade;
+        } catch (Exception e) {
+            this.cidade = "";
+        }
     }
 
     public String getUf() {
@@ -184,7 +240,14 @@ public class Cliente {
     }
 
     public void setCep(String cep) {
-        this.cep = cep;
+        try {
+            if ( ! cep.trim().isEmpty() ){
+                cep = cep.replaceAll("[^0-9]", "");
+            }
+            this.cep = cep;
+        } catch (Exception e) {
+            this.cep = "";
+        }
     }
 
     public String getTelefone() {
@@ -192,7 +255,14 @@ public class Cliente {
     }
 
     public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        try {
+            if ( ! telefone.trim().isEmpty() ){
+                telefone = telefone.replaceAll("[^0-9]", "");
+            }
+            this.telefone = telefone;
+        } catch (Exception e) {
+            this.telefone = "";
+        }
     }
 
     public Double getLimite_principal() {
@@ -200,7 +270,15 @@ public class Cliente {
     }
 
     public void setLimite_principal(Double limite_principal) {
-        this.limite_principal = limite_principal;
+        try {
+            if ( limite_principal.isNaN() || limite_principal.toString().trim().isEmpty() ){
+                this.limite_principal = 0.0;
+            }else{
+                this.limite_principal = limite_principal;
+            }
+        } catch (Exception e) {
+            this.limite_principal = 0.0;
+        }
     }
 
     public Double getLimite_principal_utilizado() {
@@ -208,15 +286,40 @@ public class Cliente {
     }
 
     public void setLimite_principal_utilizado(Double limite_principal_utilizado) {
-        this.limite_principal_utilizado = limite_principal_utilizado;
+        try {
+            if ( limite_principal_utilizado.isNaN() || limite_principal_utilizado.toString().trim().isEmpty() ){
+                this.limite_principal_utilizado = 0.0;
+            }else{
+                this.limite_principal_utilizado = limite_principal_utilizado;
+            }
+        } catch (Exception e) {
+            this.limite_principal_utilizado = 0.0;
+        }
     }
 
-    public Integer getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setStatus(String status) {
+        try {
+            if ( !status.trim().isEmpty() ){
+                switch (status){
+                    case "A":
+                        this.status = "01";
+                        break;
+                    case "I":
+                        this.status = "02";
+                        break;
+                    default:
+                        this.status = "01";
+                }
+            }else{
+                this.status = "01";
+            }
+        } catch (Exception e) {
+            this.status = "01";
+        }
     }
 
     public String getTabela_prazo() {
@@ -240,7 +343,17 @@ public class Cliente {
     }
 
     public void setFantasia(String fantasia) {
-        this.fantasia = fantasia;
+        try {
+            if (! fantasia.trim().isEmpty() ){
+                fantasia = fantasia.replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.fantasia = fantasia;
+        } catch (Exception e) {
+            this.fantasia = "";
+        }
     }
 
     public String getRg_ie() {
@@ -248,31 +361,53 @@ public class Cliente {
     }
 
     public void setRg_ie(String rg_ie) {
-        this.rg_ie = rg_ie;
+        try {
+            if ( rg_ie.trim().isEmpty() ){
+                rg_ie = rg_ie.replaceAll("[^0-9]", "");
+                this.rg_ie = rg_ie;
+            }else{
+                this.rg_ie = "";
+            }
+        } catch (Exception e) {
+            this.rg_ie = "";
+        }
     }
 
     public String getData_cadastro() {
         return data_cadastro;
     }
 
-    public void setData_cadastro(String data_cadastro) {
-        this.data_cadastro = data_cadastro;
+    public void setData_cadastro(Date data_cadastro) {
+        dfEUA.setLenient(false);
+        if ( data_cadastro == null ){
+            this.data_cadastro = "";
+        }else{
+            this.data_cadastro = dfEUA.format(data_cadastro);
+        }
     }
 
     public String getData_nascimento() {
         return data_nascimento;
     }
 
-    public void setData_nascimento(String data_nascimento) {
-        this.data_nascimento = data_nascimento;
+    public void setData_nascimento(Date data_nascimento) {
+        if ( data_nascimento == null ){
+            this.data_nascimento = "";
+        }else{
+            this.data_nascimento = dfEUA.format(data_nascimento);
+        }
     }
 
     public String getData_bloqueio() {
         return data_bloqueio;
     }
 
-    public void setData_bloqueio(String data_bloqueio) {
-        this.data_bloqueio = data_bloqueio;
+    public void setData_bloqueio(Date data_bloqueio) {
+        if ( data_bloqueio == null ){
+            this.data_bloqueio = "";
+        }else{
+            this.data_bloqueio = dfEUA.format(data_bloqueio);
+        }
     }
 
     public String getNome_pai() {
@@ -280,7 +415,15 @@ public class Cliente {
     }
 
     public void setNome_pai(String nome_pai) {
-        this.nome_pai = nome_pai;
+        try {
+            if ( !nome_pai.trim().isEmpty() ){
+                this.nome_pai = nome_pai;
+            }else{
+                this.nome_pai = "";
+            }
+        } catch (Exception e) {
+            this.nome_pai = "";
+        }
     }
 
     public String getNome_mae() {
@@ -288,7 +431,15 @@ public class Cliente {
     }
 
     public void setNome_mae(String nome_mae) {
-        this.nome_mae = nome_mae;
+        try {
+            if ( !nome_mae.trim().isEmpty() ){
+                this.nome_mae = nome_mae;
+            }else{
+                this.nome_mae = "";
+            }
+        } catch (Exception e) {
+            this.nome_mae = "";
+        }
     }
 
     public String getTipo_pessoa() {
@@ -304,7 +455,16 @@ public class Cliente {
     }
 
     public void setTelefone_secundario(String telefone_secundario) {
-        this.telefone_secundario = telefone_secundario;
+        try {
+            if (! telefone_secundario.trim().isEmpty() ){
+                telefone_secundario = telefone_secundario.replaceAll("[^0-9]", "");
+                this.telefone_secundario = telefone_secundario;
+            }else{
+                this.telefone_secundario = "";
+            }
+        } catch (Exception e) {
+            this.telefone_secundario = "";
+        }
     }
 
     public String getFax() {
@@ -312,7 +472,16 @@ public class Cliente {
     }
 
     public void setFax(String fax) {
-        this.fax = fax;
+        try {
+            if (! fax.trim().isEmpty() ){
+                fax = fax.replaceAll("[^0-9]", "");
+                this.fax = fax;
+            }else{
+                this.fax = "";
+            }
+        } catch (Exception e) {
+            this.fax = "";
+        }
     }
 
     public String getPessoa_contato() {
@@ -320,7 +489,15 @@ public class Cliente {
     }
 
     public void setPessoa_contato(String pessoa_contato) {
-        this.pessoa_contato = pessoa_contato;
+        try {
+            if (! pessoa_contato.trim().isEmpty() ){
+                this.pessoa_contato = pessoa_contato;
+            }else{
+                this.pessoa_contato = "";
+            }
+        } catch (Exception e) {
+            this.pessoa_contato = "";
+        }
     }
 
     public String getEndereco_cob() {
@@ -328,7 +505,17 @@ public class Cliente {
     }
 
     public void setEndereco_cob(String endereco_cob) {
-        this.endereco_cob = endereco_cob;
+        try {
+            if ( ! endereco_cob.trim().isEmpty() ){
+                endereco_cob = endereco_cob.replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.endereco_cob = endereco_cob;
+        } catch (Exception e) {
+            this.endereco_cob = "";
+        }
     }
 
     public String getBairro_cob() {
@@ -336,7 +523,17 @@ public class Cliente {
     }
 
     public void setBairro_cob(String bairro_cob) {
-        this.bairro_cob = bairro_cob;
+        try {
+            if (! bairro_cob.trim().isEmpty() ){
+                bairro_cob = bairro_cob.replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.bairro_cob = bairro_cob;
+        } catch (Exception e) {
+            this.bairro_cob = "";
+        }
     }
 
     public String getCep_cob() {
@@ -344,7 +541,14 @@ public class Cliente {
     }
 
     public void setCep_cob(String cep_cob) {
-        this.cep_cob = cep_cob;
+        try {
+            if ( ! cep_cob.trim().isEmpty() ){
+                cep_cob = cep_cob.replaceAll("[^0-9]", "");
+            }
+            this.cep_cob = cep_cob;
+        } catch (Exception e) {
+            this.cep_cob = "";
+        }
     }
 
     public String getCidade_cob() {
@@ -352,7 +556,17 @@ public class Cliente {
     }
 
     public void setCidade_cob(String cidade_cob) {
-        this.cidade_cob = cidade_cob;
+        try {
+            if (! cidade_cob.trim().isEmpty() ){
+                cidade_cob = cidade_cob.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.cidade_cob = cidade_cob;
+        } catch (Exception e) {
+            this.cidade_cob = "";
+        }
     }
 
     public String getUf_cob() {
@@ -376,7 +590,19 @@ public class Cliente {
     }
 
     public void setObservacao(String observacao) {
-        this.observacao = observacao;
+        try {
+            if (observacao.trim().isEmpty()) {
+                this.observacao = "";
+            } else {
+                this.observacao = observacao.toUpperCase().replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "")
+                        .replaceAll("[\\s+]", " ");
+            }
+        } catch (Exception e) {
+            this.observacao = "";
+        }
     }
 
     public String getRestricoes() {
@@ -416,15 +642,31 @@ public class Cliente {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        try {
+            if ( !email.trim().isEmpty() ){
+                this.email = email;
+            }else{
+                this.email = "";
+            }
+        } catch (Exception e) {
+            this.email = "";
+        }
     }
 
     public String getData_ultima_alteracao() {
         return data_ultima_alteracao;
     }
 
-    public void setData_ultima_alteracao(String data_ultima_alteracao) {
-        this.data_ultima_alteracao = data_ultima_alteracao;
+    public void setData_ultima_alteracao(Date data_ultima_alteracao) {
+        try {
+            if ( data_ultima_alteracao == null ){
+                this.data_ultima_alteracao = "";
+            }else{
+                this.data_ultima_alteracao = dfEUA.format(data_ultima_alteracao);
+            }
+        } catch (Exception e) {
+            this.data_ultima_alteracao = "";
+        }
     }
 
     public String getCnae() {
@@ -583,8 +825,16 @@ public class Cliente {
         return data_nascimento_conj;
     }
 
-    public void setData_nascimento_conj(String data_nascimento_conj) {
-        this.data_nascimento_conj = data_nascimento_conj;
+    public void setData_nascimento_conj(Date data_nascimento_conj) {
+        try {
+            if ( data_nascimento_conj == null ){
+                this.data_nascimento_conj = "";
+            }else{
+                this.data_nascimento_conj = dfEUA.format(data_nascimento_conj);
+            }
+        } catch (Exception e) {
+            this.data_nascimento_conj = "";
+        }
     }
 
     public String getEmpresa_trabalho_conj() {
@@ -880,7 +1130,15 @@ public class Cliente {
     }
 
     public void setPessoa_autorizou_cadastro(String pessoa_autorizou_cadastro) {
-        this.pessoa_autorizou_cadastro = pessoa_autorizou_cadastro;
+        try {
+            if (! pessoa_autorizou_cadastro.trim().isEmpty() ){
+                this.pessoa_autorizou_cadastro = pessoa_autorizou_cadastro;
+            }else{
+                this.pessoa_autorizou_cadastro = "";
+            }
+        } catch (Exception e) {
+            this.pessoa_autorizou_cadastro = "";
+        }
     }
 
     public String getDia_fecha_fatura() {
@@ -960,7 +1218,17 @@ public class Cliente {
     }
 
     public void setComplemento_end_cliente(String complemento_end_cliente) {
-        this.complemento_end_cliente = complemento_end_cliente;
+        try {
+            if ( ! complemento_end_cliente.trim().isEmpty() ){
+                complemento_end_cliente = complemento_end_cliente.replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.complemento_end_cliente = complemento_end_cliente;
+        } catch (Exception e) {
+            this.complemento_end_cliente = "";
+        }
     }
 
     public String getComplemento_end_cob() {
@@ -968,7 +1236,17 @@ public class Cliente {
     }
 
     public void setComplemento_end_cob(String complemento_end_cob) {
-        this.complemento_end_cob = complemento_end_cob;
+        try {
+            if (! complemento_end_cob.trim().isEmpty() ){
+                complemento_end_cob = complemento_end_cob.replaceAll("[ÁÀÂÃ]", "A")
+                        .replaceAll("[ÉÈÊ]", "E").replaceAll("[ÍÌ]", "I")
+                        .replaceAll("[ÓÒÔO]", "O").replaceAll("[ÚÙ]", "U")
+                        .replaceAll("[Ç]", "C").replaceAll("[ºª]", "");
+            }
+            this.complemento_end_cob = complemento_end_cob;
+        } catch (Exception e) {
+            this.complemento_end_cob = "";
+        }
     }
 
     public String getVendedor() {
